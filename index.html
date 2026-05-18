@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Recurring Tasks</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>Daily Recurring Tasks</h1>
+      <p class="subtitle">Tick tasks done for today, add new recurring tasks, or delete old ones.</p>
+
+      <form id="add-task-form" class="add-row">
+        <input id="new-task-input" type="text" placeholder="Add recurring task" maxlength="120" required />
+        <button type="submit">Add</button>
+      </form>
+
+      <ul id="task-list" class="task-list"></ul>
+      <p id="empty-state" class="empty-state">No tasks yet. Add one above.</p>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
